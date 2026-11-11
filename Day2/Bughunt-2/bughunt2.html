@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join the Workshop</title>
+</head>
+<body>
+ <header>
+    <h1>HackGeniX Workshop</h1>
+</header>
+  <form action="#" method="get">
+    <label for="fullname">Full name</label>
+    <input type="text" id="fullname" name="name" required>
+
+    <label for="mail">Email:</label>
+<input type="email" id="mail" name="mail" placeholder="Enter your email" required>
+
+    <p>Gender:</p>
+    <input type="radio" id="m" name="gender" value="male"><label for="m">Male</label>
+<input type="radio" id="f" name="gender" value="female"><label for="f">Female</label>
+
+    <label for="pwd">Password</label>
+   <input type="password" id="pwd" name="password" minlength="8" required>
+
+   <label for="course">Select Course:</label>
+
+<select id="course" name="course" required>
+    <option value="">Choose a course</option>
+    <option value="web">Web Development</option>
+    <option value="app">App Development</option>
+</select>
+
+    <input type="checkbox" id="terms" name="terms" required>
+<label for="terms">I accept the terms</label>
+
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" min="18" max="60" required>
+
+    <button type="reset">Reset form</button>
+  </form>
+
+  <table>
+    <caption>Workshop Schedule</caption>
+    <tr>
+    <th scope="col">Day</th>
+    <th scope="col">Topic</th>
+</tr>
+    <tr><td colspan="2">Break - Tea</td></tr>
+    <tr>
+    <td>Monday</td>
+    <td>HTML Basics</td>
+</tr>
+  </table>
+</body>
+</html>

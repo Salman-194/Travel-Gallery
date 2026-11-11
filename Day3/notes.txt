@@ -1,0 +1,34 @@
+CSS SPECIFICITY JOURNAL
+
+1. #starters
+   Specificity: (1, 0, 0)
+
+2. .price
+   Specificity: (0, 1, 0)
+
+3. header p
+   Specificity: (0, 0, 2)
+
+4. a[target="_blank"]
+   Specificity: (0, 1, 1)
+
+5. nav li:nth-child(2)
+   Specificity: (0, 1, 2)
+
+Specificity Order:
+  ID > Class / Attribute / Pseudo-class > Element
+
+Practical Specificity Test:
+
+ h2 {
+    color: blue;
+ }
+
+  #starters {
+    color: red;
+ }
+
+  Result: Starters heading displays red.
+
+  Reason: ID selector has higher specificity
+  than an element selector.

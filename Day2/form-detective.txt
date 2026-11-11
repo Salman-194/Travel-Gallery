@@ -1,0 +1,17 @@
+Day 2 - Form Detective
+
+GET Method:
+- Sends form data through the URL.
+- Submitted values can be seen in the address bar.
+- Suitable for search forms and non-sensitive data.
+
+POST Method:
+- Sends form data in the request body.
+- Data does not appear in the URL.
+- Suitable for submitting sensitive or larger amounts of data.
+- POST is not automatically secure; HTTPS is needed.
+
+Important:
+- Every form input should have a name attribute.
+- The form method decides how data is submitted.
+- The action attribute specifies where form data is sent.

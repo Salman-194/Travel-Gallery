@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Workshop</title>
+</head>
+<body>
+
+    <h1>Table Workshop</h1>
+
+    <table border="1">
+    <caption>Weekly Timetable</caption>
+
+    <thead>
+        <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Mon</th>
+            <th scope="col">Tue</th>
+            <th scope="col">Wed</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>9:00 - 10:00</td>
+            <td>HTML</td>
+            <td>Python</td>
+            <td>Java</td>
+        </tr><!-- 4 columns -->
+
+        <tr>
+            <td>10:00 - 10:30</td>
+            <td colspan="3">Break</td>
+        </tr><!-- 4 columns -->
+
+        <tr>
+            <td>10:30 - 11:30</td>
+            <td>CSS</td>
+            <td>SQL</td>
+            <td>Networking</td>
+        </tr><!-- 4 columns -->
+    </tbody>
+</table>
+
+<h2>Student Marks Sheet</h2>
+
+<table border="1">
+    <caption>Student Marks</caption>
+
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Marks</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td rowspan="2">Salman</td>
+            <td>HTML</td>
+            <td>90</td>
+        </tr><!-- 3 columns -->
+
+        <tr>
+            <td>Python</td>
+            <td>85</td>
+        </tr><!-- 3 columns -->
+
+        <tr>
+            <td rowspan="2">Arun</td>
+            <td>HTML</td>
+            <td>88</td>
+        </tr><!-- 3 columns -->
+
+        <tr>
+            <td>Python</td>
+            <td>92</td>
+        </tr><!-- 3 columns -->
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th colspan="2">Total</th>
+            <td>355</td>
+        </tr><!-- 3 columns -->
+    </tfoot>
+</table>
+
+</body>
+</html>

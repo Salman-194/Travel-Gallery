@@ -1,0 +1,96 @@
+:root {
+    --brand: #2c3e50;
+    --accent: #9a4d00;
+    --ink: #222222;
+    --muted: #6b6b6b;
+    --surface: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ink);
+    background-color: var(--surface);
+}
+h1 {
+    font-size: 2.5rem;
+    color: var(--brand);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--brand);
+}
+a {
+    text-decoration: none;
+    color: var(--brand);
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+dt {
+    font-weight: bold;
+    color: var(--brand);
+}
+
+dd {
+    color: var(--muted);
+}
+
+dt::before {
+    content: "🍽️ ";
+}
+.price {
+    background-color: rgba(230, 126, 34, 0.15);
+    color: var(--brand);
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+/* ID Selector */
+#starters {
+    border-bottom: 2px solid var(--accent);
+}
+
+/* Descendant Selector */
+header p {
+    color: var(--muted);
+}
+
+/* Child Selector */
+nav > ul {
+    list-style-type: none;
+}
+
+/* Adjacent Sibling Selector */
+h3 + ol {
+    background-color: var(--surface);
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+    color: var(--accent);
+}
+
+/* nth-child Selector */
+nav li:nth-child(2) {
+    font-weight: bold;
+}
+
+/* not() Selector */
+nav li:not(:last-child) {
+    margin-right: 10px;
+}
+h2 {
+    color: blue;
+}
+
+#starters {
+    color: red;
+}

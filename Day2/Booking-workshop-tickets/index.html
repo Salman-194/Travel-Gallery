@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Booking | HackGeniX</title>
+</head>
+<body>
+
+    <header>
+        <h1>Web Development Workshop</h1>
+    </header>
+
+    <nav>
+<ul>
+    <li><a href="#details">Details</a></li>
+    <li><a href="#prices">Prices</a></li>
+    <li><a href="#book">Book Now</a></li>
+    <li><a href="#faq">FAQ</a></li>
+</ul>
+    </nav>
+
+    <main>
+<section id="details">
+
+    <article>
+        <header>
+            <h2>About the Workshop</h2>
+            <p>
+                Date:
+                <time datetime="2026-11-10">November 10, 2026</time>
+            </p>
+        </header>
+
+        <p>
+            Learn the fundamentals of HTML and web development
+            through practical hands-on sessions.
+        </p>
+
+        <p>
+            This workshop is suitable for beginners who want
+            to build their first website.
+        </p>
+
+        <address>
+            Venue: HackGeniX Training Center, Chennai
+        </address>
+    </article>
+
+    <aside>
+        <h3>Workshop Tip</h3>
+        <p>Bring your laptop for hands-on practice.</p>
+    </aside>
+
+</section>
+
+<section id="prices">
+
+    <h2>Workshop Ticket Prices</h2>
+
+    <table border="1">
+
+        <caption>Ticket Price List</caption>
+
+        <colgroup>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th scope="col">Ticket</th>
+                <th scope="col">Early Bird</th>
+                <th scope="col">Regular</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Student</th>
+                <td>₹500</td>
+                <td>₹700</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Professional</th>
+                <td>₹1000</td>
+                <td>₹1200</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Group</th>
+                <td colspan="2">₹1500</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Prices include GST</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</section>
+
+<section id="book">
+
+    <h2>Book Your Workshop Seat</h2>
+
+    <form action="results.html" method="post">
+
+        <fieldset>
+            <legend>Your Details</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname"
+                   required minlength="3">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile"
+                   pattern="[6-9][0-9]{9}"
+                   title="Enter a valid 10-digit Indian mobile number"
+                   required>
+
+        </fieldset>
+
+<fieldset>
+    <legend>Your Ticket</legend>
+
+    <label for="ticket">Select Ticket:</label>
+
+    <select id="ticket" name="ticket" required>
+        <option value="">Choose a ticket</option>
+
+        <optgroup label="Individual Tickets">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+        </optgroup>
+
+        <optgroup label="Group Tickets">
+            <option value="group">Group Booking</option>
+        </optgroup>
+    </select>
+
+    <br><br>
+
+    <label for="quantity">Number of Tickets:</label>
+    <input type="number" id="quantity" name="quantity"
+           min="1" max="5" required>
+
+    <br><br>
+
+    <p>Payment Method:</p>
+
+    <input type="radio" id="upi" name="payment" value="upi">
+    <label for="upi">UPI</label>
+
+    <input type="radio" id="card" name="payment" value="card">
+    <label for="card">Card</label>
+
+    <input type="radio" id="cash" name="payment" value="cash">
+    <label for="cash">Cash</label>
+
+    <br><br>
+
+    <label for="date">Preferred Workshop Date:</label>
+    <input type="date" id="date" name="date"
+           min="2026-11-10" max="2026-12-31">
+
+</fieldset>
+
+<fieldset>
+    <legend>Extras</legend>
+
+    <p>Additional Options:</p>
+
+    <input type="checkbox" id="certificate"
+           name="extras" value="certificate">
+    <label for="certificate">Printed Certificate</label>
+
+    <br><br>
+
+    <input type="checkbox" id="materials"
+           name="extras" value="materials">
+    <label for="materials">Workshop Materials</label>
+
+    <br><br>
+
+    <label for="message">Special Requests:</label>
+    <br>
+    <textarea id="message" name="message"
+              maxlength="200" rows="4" cols="30"></textarea>
+
+    <br><br>
+
+    <label for="city">Your City:</label>
+    <input type="text" id="city" name="city" list="cities">
+
+    <datalist id="cities">
+        <option value="Chennai">
+        <option value="Coimbatore">
+        <option value="Namakkal">
+        <option value="Salem">
+    </datalist>
+
+    <br><br>
+
+    <label for="knowledge">
+        How much do you already know? (1–10)
+    </label>
+    <br>
+    <input type="range" id="knowledge" name="knowledge"
+           min="1" max="10">
+
+           <br><br>
+
+<input type="checkbox" id="terms" name="terms" required>
+<label for="terms">I agree to the Terms and Conditions</label>
+
+</fieldset>
+
+<br>
+
+<button type="submit">Submit Booking</button>
+
+<button type="reset">Reset Form</button>
+
+<button type="button">Check Price</button>
+
+    </form>
+
+</section>
+
+<section id="faq">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <details open>
+        <summary>Who can attend this workshop?</summary>
+        <p>Anyone interested in learning web development can attend.</p>
+    </details>
+
+    <details>
+        <summary>Do I need coding experience?</summary>
+        <p>No. This workshop is suitable for beginners.</p>
+    </details>
+
+    <details>
+        <summary>Should I bring my laptop?</summary>
+        <p>Yes, bring your laptop for practical sessions.</p>
+    </details>
+
+    <details>
+        <summary>Will I receive a certificate?</summary>
+        <p>Yes, participants will receive a workshop certificate.</p>
+    </details>
+
+    <h3>Workshop Seat Availability</h3>
+
+    <label for="seats">Seats filled:</label>
+    <progress id="seats" value="60" max="100">60%</progress>
+
+    <br><br>
+
+    <label for="battery">Laptop Battery:</label>
+    <meter id="battery" min="0" max="100" value="75">75%</meter>
+
+</section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 HackGeniX Workshop</p>
+    </footer>
+
+</body>
+</html>

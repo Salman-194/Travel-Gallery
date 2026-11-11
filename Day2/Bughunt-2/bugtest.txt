@@ -1,0 +1,15 @@
+Day 2 - Bug Hunt Notes
+
+1. Label for and input id must match.
+2. Email input should use type="email".
+3. Radio buttons in one group must have the same name.
+4. Every form input needs a name attribute.
+5. Dropdown should have a label and required validation.
+6. Checkbox should have a properly connected label.
+7. maxlength does not work with number inputs.
+8. Reset button must use type="reset".
+9. Table rows must have matching column counts.
+10. Semantic HTML elements improve page structure.
+11. HTML lang attribute identifies the page language.
+12. Table headers should use scope="col".
+13. Tables should have a caption.

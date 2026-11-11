@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.page {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+}
+.header {
+    grid-area: header;
+    background: #5B2A86;
+    color: white;
+    padding: 1.5rem;
+}
+
+.header h1 {
+    font-size: 6vw;
+}
+.sidebar {
+    grid-area: sidebar;
+    background: #F6F0FA;
+    padding: 1rem;
+}
+.gallery {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.card {
+    background: #E8DDF2;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card h3 {
+    color: #5B2A86;
+    margin-bottom: 0.5rem;
+}
+.featured {
+    background: #5B2A86;
+    color: white;
+    grid-column: span 1;
+}
+
+.featured h3 {
+    color: white;
+}
+@media (min-width: 600px) {
+    .page {
+        grid-template-columns: 200px 1fr;
+
+        grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .card {
+        margin-bottom: 0;
+    }
+
+    .featured {
+        grid-column: span 2;
+    }
+}
+@media (min-width: 900px) {
+    .page {
+        grid-template-columns: 220px 1fr;
+
+        grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .featured {
+        grid-column: span 2;
+    }
+}
+.sidebar ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.sidebar li {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: white;
+    border-radius: 5px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}

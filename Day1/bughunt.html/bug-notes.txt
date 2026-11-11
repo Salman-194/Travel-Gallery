@@ -1,0 +1,43 @@
+BUG HUNT PROJECT – DAY 1
+
+Bug 1: Missing closing title tag.
+Fix: Added </title>.
+
+Bug 2: Incorrect strong and paragraph tag nesting.
+Fix: Corrected the HTML tag order.
+
+Bug 3: Incorrect image file path.
+Fix: Created Images folder and updated image path to Images/Image.png.
+
+Bug 4: Invalid list structure.
+Fix: Placed CSS inside an <li> element.
+
+Bug 5: Incorrect anchor href syntax.
+Fix: Added quotation marks and corrected the filename.
+
+Bug 6: External link security issue.
+Fix: Added rel="noopener noreferrer".
+
+Bug 7: Unescaped less-than symbol.
+Fix: Replaced < with &lt;.
+
+Bug 8: Invalid br closing tag.
+Fix: Removed </br>.
+
+Bug 9: Incorrect div and paragraph nesting.
+Fix: Corrected the HTML structure.
+
+Bug 10: Missing image alternative text.
+Fix: Added alt="Batch photo".
+
+Bug 11: Incorrect heading hierarchy.
+Fix: Changed the second h1 to h2.
+
+Bug 12: Image path verification.
+Fix: Verified the image source path.
+
+Bug 13: Missing HTML5 doctype and language.
+Fix: Added <!DOCTYPE html> and lang="en".
+
+Bug 14: Missing character encoding and viewport.
+Fix: Added UTF-8 charset and viewport metadata.
