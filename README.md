@@ -8,6 +8,7 @@ A responsive travel gallery website built using HTML and CSS Grid.
 - Six destination cards with images
 - Featured destination card
 - Responsive images
+- Published using GitHub Pages
 
 ## Technologies Used
 - HTML5
