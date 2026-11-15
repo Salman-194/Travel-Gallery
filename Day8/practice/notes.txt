@@ -1,0 +1,15 @@
+Q1. The add() function logs the sum but does not return it. Use return to send the result back.
+
+Q2. The function is not invoked because parentheses are missing. Use greet() to call the function.
+
+Q3. The default sort() method sorts numbers as strings. Use a comparison function (a, b) => a - b.
+
+Q4. The reduce() method needs an initial value when the array is empty. Add 0 as the initial accumulator value.
+
+Q5. JavaScript object property names are case-sensitive. Use student.name instead of student.Name.
+
+Q6. JSON requires double quotes around property names and string values. Use valid JSON syntax.
+
+Q7. Assigning an array directly copies its reference, not its values. Use the spread operator to create a separate copy.
+
+Q8. Arrow functions do not have their own this value. Use a regular method to access this.name.
