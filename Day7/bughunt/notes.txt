@@ -1,0 +1,58 @@
+
+Day 7 - Bug Hunt Project
+Bug Fix Notes
+
+1. Missing closing parenthesis in console.log().
+   Fix: Added the missing ).
+
+2. Incorrect age condition.
+   Fix: Added age before the second comparison.
+
+3. Mismatched quotation marks.
+   Fix: Used matching double quotes for Asha.
+
+4. Invalid variable name.
+   Fix: Changed 2ndName to secondName.
+
+5. Assignment instead of comparison.
+   Fix: Changed = to === in the if condition.
+
+6. Extra semicolon in the for loop.
+   Fix: Removed the semicolon after the loop condition.
+
+7. Infinite while loop.
+   Fix: Added count++ to update the counter.
+
+8. Missing grade variable.
+   Fix: Declared grade before the switch statement.
+
+9. Missing break in switch.
+   Fix: Added break after case A.
+
+10. Incorrect default keyword.
+    Fix: Corrected defualt to default.
+
+11. Missing semicolon after the Price declaration.
+    Fix: Added a semicolon after let Price = 500.
+
+12. Incorrect Math method capitalization.
+    Fix: Changed Math.Random() to Math.random().
+
+13. Constant variable reassignment.
+    Fix: Removed the reassignment of PI.
+
+14. Incorrect discount calculation.
+    Fix: Applied the discount percentage to the total amount.
+
+
+
+Professional Improvements
+
+1. Use consistent camelCase variable names, such as price instead of Price.
+2. Add input validation for age and other user inputs.
+3. Use meaningful messages for invalid inputs.
+4. Display the billing total with proper currency formatting.
+5. Use clear comments to explain important sections of the code.
+
+Missing grade variable declaration.
+Fix: Declared grade before using it in the switch statement.

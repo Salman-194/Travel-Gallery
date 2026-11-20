@@ -1,0 +1,104 @@
+Q1: R&D team <b> costs ₹500.
+Q2: No. The button is disabled because the disabled attribute is present. Its value "false" does not enable it.
+Q3: <!-- → Comment start.
+    Inner <!-- → Nested comment-ah treat pannaadhu.
+    First --> → Comment end.
+    Remaining  three --> → Normal text-ah display aagum.
+Q4: The browser scrolls to the first element with id="note" because duplicate IDs are invalid and the first matching element is targeted.
+Q5: Only checked checkboxes are submitted.
+Q6: results.html?q=a+b%26c%3B.
+Q7: results.html?b=y.
+Q8: (a) Submission is blocked because 12a does not match the pattern [0-9]{3}, which requires exactly three digits.
+    (b) Submission is allowed because the input is not required. The pattern attribute alone does not prevent an empty value.
+    (c) Submission is allowed because the browser accepts asha@x as a valid email format. A dot in the domain is not compulsory for HTML email validation.
+Q9: – Broken HTML Code
+
+    Errors:
+    1. The class attribute value is not enclosed in quotation marks.
+    2. The <img> element is a void element and does not require a closing </img> tag.
+
+    What the user sees:
+    1. The text "Welcome" is displayed in the browser.
+    2. The image may display a broken-image icon because a.png is not available.
+
+    Corrected Code:
+
+    <p class="intro highlight">Welcome</p>
+    <img src="a.png" alt="Sample image">
+
+    Explanation:
+    The class attribute is correctly enclosed in double quotes, and the unnecessary closing img tag is removed.
+Q10: – Nested HTML Elements
+
+    Errors:
+    1. Nested anchor elements are invalid in HTML.
+    2. A <div> element cannot be placed inside a <p> element.
+
+    What the user sees:
+    The browser automatically corrects the invalid HTML structure and displays the text "Read this help" and "More info".
+
+    Corrected Code:
+
+    <p>
+         Read <a href="page.html">this page</a>
+         and <a href="help.html">help</a>.
+    </p>
+
+    <div>More info</div>
+
+    Explanation:
+    The anchor elements are separated, and the div element is moved outside the paragraph. This creates valid HTML structure.
+Q11: – Required Select Validation
+
+    Error:
+    The first option does not have an empty value. Therefore, the browser treats "-- Select --" as a valid selected value.
+
+    What the user sees:
+    In the broken version, the form submits even when "-- Select --" is selected.
+
+    Corrected Code:
+    <option value="" disabled selected>-- Select --</option>
+
+    Explanation:
+    Adding value="" makes the first option an empty placeholder.
+Q12: – Number Input Validation
+
+    Error:
+    The maxlength attribute does not work with input type="number".
+
+    What the user sees:
+    In the broken version, the browser accepts 150 even though maxlength="2" is used.
+
+    Corrected Code:
+    <input type="number" id="age" name="age" min="0" max="99">
+
+    Explanation:
+    The max attribute sets the maximum allowed value to 99. If the user enters 150, the browser prevents form submission and displays a validation message.
+Q13: – Label and Button Issues
+
+    Errors:
+    1. The label is not associated with the input, Attribute and the input does not have a matching id.
+    2. The Check button has no type attribute.
+
+    Corrected Code:
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <button type="button">Check</button>
+    <button type="submit">Save</button>
+
+    Explanation:
+    The type="button" prevents the Check button from submitting the form, while type="submit" allows the Save button to submit it.
+Q14: – Table Rowspan Issue
+
+    Error:
+    The second row contains an extra Asha cell. The first Asha cell already uses rowspan="2", so it occupies the first column in both rows.
+
+    What the user sees:
+    The table displays an extra cell, causing incorrect column alignment.
+
+    Correction:
+    Remove the extra <td>Asha</td> from the second row.
+
+    Explanation:
+    The rowspan="2" attribute makes the first Asha cell span two rows. The second row only needs the Subject and Mark cells.
