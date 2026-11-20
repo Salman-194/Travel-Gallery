@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - Events & Storage</title>
+</head>
+<body>
+
+    <h1>Day 10 - JavaScript Events</h1>
+
+    <p id="message">Try the event buttons!</p>
+
+    <button id="clickBtn">Click Me</button>
+    <br><br>
+
+<input type="text" id="nameInput" placeholder="Type your name">
+
+<p id="inputMessage"></p>
+<br><br>
+
+<p id="keyMessage">Press any key on your keyboard</p>
+<br><br>
+
+<select id="citySelect">
+    <option value="">Select City</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Coimbatore">Coimbatore</option>
+    <option value="Salem">Salem</option>
+</select>
+
+<p id="cityMessage"></p>
+<h2>Registration Form</h2>
+
+<form id="registerForm">
+    <input type="text" id="regName" placeholder="Enter Name">
+    <p id="nameError"></p>
+    <br><br>
+
+    <input type="email" id="regEmail" placeholder="Enter Email">
+    <p id="emailError"></p>
+    <br><br>
+
+    <input type="tel" id="regPhone" placeholder="Enter Phone Number">
+    <p id="phoneError"></p>
+    <br><br>
+
+    <input type="password" id="regPassword" placeholder="Enter Password">
+    <p id="passwordStrength"></p>
+    <br><br>
+
+    <button type="submit">Register</button>
+</form>
+
+<p id="errorMessage"></p>
+<p id="successMessage"></p>
+<h2>Local Storage Practice</h2>
+
+<input type="text" id="storageInput" placeholder="Enter something">
+
+<button id="saveBtn">Save Data</button>
+<button id="loadBtn">Load Data</button>
+<button id="deleteBtn">Delete Data</button>
+
+<p id="storageMessage"></p>
+<h2>Event Bubbling Practice</h2>
+
+<div id="parentBox">
+    Parent Box
+    <button id="childBtn">Child Button</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
